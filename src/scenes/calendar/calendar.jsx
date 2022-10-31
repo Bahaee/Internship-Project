@@ -58,7 +58,7 @@ const Calendar = () => {
           p="15px"
           borderRadius="4px"
         >
-          <Typography variant="h5">Events</Typography>
+          <Typography variant="h5">Projects</Typography>
           <List>
             {currentEvents.map((event) => (
               <ListItem
@@ -112,14 +112,25 @@ const Calendar = () => {
             initialEvents={[
               {
                 id: "12315",
-                title: "All-day event",
+                title: "Pinging And Liquid Transfer Project",
                 date: "2022-09-14",
               },
               {
-                id: "5123",
-                title: "Timed event",
-                date: "2022-09-28",
+                id: "51234",
+                title: "PowerCARD",
+                date: "2022-09-29",
               },
+              {
+                id: "56789",
+                title: "Mobile Payment",
+                date: "2022-09-16",
+              },
+              {
+                id: "98765",
+                title: "Fraud Monitoring",
+                date: "2022-10-01",
+              },
+              
             ]}
           />
         </Box>
