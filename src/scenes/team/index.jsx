@@ -1,4 +1,4 @@
-import { Box, Typography, useTheme } from "@mui/material";
+import { Box, Typography, useTheme, Button } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
 import { tokens } from "../../theme";
 import { mockDataTeam } from "../../data/mockData";
@@ -105,6 +105,13 @@ const Team = () => {
           },
         }}
       >
+      <Box display="flex" justifyContent="start" mt="20px">
+        <Button type="submit" color="secondary" variant="contained">
+          Create A New Team 
+        </Button>
+      </Box>
+      <br></br>
+      <br></br>
         <DataGrid checkboxSelection rows={mockDataTeam} columns={columns} />
       </Box>
     </Box>
